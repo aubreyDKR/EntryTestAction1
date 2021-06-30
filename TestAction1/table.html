@@ -1,0 +1,1981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="/fontawesome/all.min.css">
+    <link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+    <title>TableAction1</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <table id="table">
+            <thead>
+                <!-- Row 1 Head -->
+                <tr>
+                    <th class="largeCell lightcolor">
+                        <div class="iconscell">
+                            <input type="checkbox" class="cellcheckbox">
+                            <i class="far fa-trash-alt"></i><i class="fas fa-redo"></i><i class="fas fa-rocket"></i>
+                        </div>
+                    </th>
+                    <th class="width90 lightcolor"><div class="notecell mediumCell">Оценка частотн.<i class="fas fa-sort-down"></i></div></th>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="rowheadcell">
+                            <input type="checkbox" class="cellcheckbox">
+                            <div class="spacebetween">
+                                Row 1 
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-chevron-right" id="chevRow1" onclick="showHiddenRow('hiddenHeadRow_1.1', 'hiddenHeadRow_1.2', 'hiddenHeadRow_1.3', 'hiddenHeadRow_1.4'
+                                    , 'hiddenBodyRow_1.1', 'hiddenBodyRow_1.2', 'hiddenBodyRow_1.3', 'hiddenBodyRow_1.4', this.id);"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>2750</th>
+                </tr>
+                <!-- Row 1 Head Expand Hidden -->
+                <tr id="hiddenHeadRow_1.1" class="hidden_row">
+                    <th colspan="2">
+                        <button class="btn--top10">Просмотреть Топ-10</button>
+                    </th>
+                </tr>
+                <tr id="hiddenHeadRow_1.2" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_1.3" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_1.4" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <!-- Row 2 Head -->
+                <tr>
+                    <th>
+                        <div class="rowheadcell">
+                            <input type="checkbox" class="cellcheckbox">
+                            <div class="spacebetween">
+                                Row 2 <i class="fas fa-chevron-right" id="chevRow2" onclick="showHiddenRow('hiddenHeadRow_2.1', 'hiddenHeadRow_2.2', 'hiddenHeadRow_2.3', 'hiddenHeadRow_2.4'
+                                , 'hiddenBodyRow_2.1', 'hiddenBodyRow_2.2', 'hiddenBodyRow_2.3', 'hiddenBodyRow_2.4', this.id);"></i>
+                            </div>
+                        </div>
+                    </th>
+                    <th>4150</th>
+                </tr>
+                <!-- Row 2 Head Expand Hidden -->
+                <tr id="hiddenHeadRow_2.1" class="hidden_row">
+                    <th colspan="2">
+                        <button class="btn--top10">Просмотреть Топ-10</button>
+                    </th>
+                </tr>
+                <tr id="hiddenHeadRow_2.2" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_2.3" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_2.4" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <!-- Row 3 Head -->
+                <tr>
+                    <th>
+                        <div class="rowheadcell">
+                            <input type="checkbox" class="cellcheckbox">
+                            <div class="spacebetween">
+                                Row 3 <div><i class="far fa-star"></i><i class="fas fa-chevron-right" id="chevRow3" onclick="showHiddenRow('hiddenHeadRow_3.1', 'hiddenHeadRow_3.2', 'hiddenHeadRow_3.3', 'hiddenHeadRow_3.4'
+                                    , 'hiddenBodyRow_3.1', 'hiddenBodyRow_3.2', 'hiddenBodyRow_3.3', 'hiddenBodyRow_3.4', this.id);"></i></div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>2750</th>
+                </tr>
+                <!-- Row 3 Head Expand Hidden -->
+                <tr id="hiddenHeadRow_3.1" class="hidden_row">
+                    <th colspan="2">
+                        <button class="btn--top10">Просмотреть Топ-10</button>
+                    </th>
+                </tr>
+                <tr id="hiddenHeadRow_3.2" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_3.3" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_3.4" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <!-- Row 4 Head -->
+                <tr>
+                    <th>
+                        <div class="rowheadcell">
+                            <input type="checkbox" class="cellcheckbox">
+                            <div class="spacebetween">
+                                Row 4 <i class="fas fa-chevron-right " id="chevRow4" onclick="showHiddenRow('hiddenHeadRow_4.1', 'hiddenHeadRow_4.2', 'hiddenHeadRow_4.3', 'hiddenHeadRow_4.4'
+                                , 'hiddenBodyRow_4.1', 'hiddenBodyRow_4.2', 'hiddenBodyRow_4.3', 'hiddenBodyRow_4.4', this.id);"></i>
+                            </div>
+                        </div>
+                    </th>
+                    <th>4150</th>
+                </tr>
+                <!-- Row 4 Head Expand Hidden -->
+                <tr id="hiddenHeadRow_4.1" class="hidden_row">
+                    <th colspan="2">
+                        <button class="btn--top10">Просмотреть Топ-10</button>
+                    </th>
+                </tr>
+                <tr id="hiddenHeadRow_4.2" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_4.3" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_4.4" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <!-- Row 5 Head -->
+                <tr>
+                    <th>
+                        <div class="rowheadcell">
+                            <input type="checkbox" class="cellcheckbox">
+                            <div class="spacebetween">
+                                Row 5 <i class="fas fa-chevron-right" id="chevRow5" onclick="showHiddenRow('hiddenHeadRow_5.1', 'hiddenHeadRow_5.2', 'hiddenHeadRow_5.3', 'hiddenHeadRow_5.4'
+                                , 'hiddenBodyRow_5.1', 'hiddenBodyRow_5.2', 'hiddenBodyRow_5.3', 'hiddenBodyRow_5.4', this.id);"></i>
+                            </div>
+                        </div>
+                    </th>
+                    <th>2750</th>
+                </tr>
+                <!-- Row 5 Head Expand Hidden -->
+                <tr id="hiddenHeadRow_5.1" class="hidden_row">
+                    <th colspan="2">
+                        <button class="btn--top10">Просмотреть Топ-10</button>
+                    </th>
+                </tr>
+                <tr id="hiddenHeadRow_5.2" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_5.3" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_5.4" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <!-- Row 6 Head -->
+                <tr>
+                    <th>
+                        <div class="rowheadcell">
+                            <input type="checkbox" class="cellcheckbox">
+                            <div class="spacebetween">
+                                Row 6 <i class="fas fa-chevron-right" id="chevRow6" onclick="showHiddenRow('hiddenHeadRow_6.1', 'hiddenHeadRow_6.2', 'hiddenHeadRow_6.3', 'hiddenHeadRow_6.4'
+                                , 'hiddenBodyRow_6.1', 'hiddenBodyRow_6.2', 'hiddenBodyRow_6.3', 'hiddenBodyRow_6.4', this.id);"></i>
+                            </div>
+                        </div>
+                    </th>
+                    <th>4150</th>
+                </tr>
+                <!-- Row 6 Head Expand Hidden -->
+                <tr id="hiddenHeadRow_6.1" class="hidden_row">
+                    <th colspan="2">
+                        <button class="btn--top10">Просмотреть Топ-10</button>
+                    </th>
+                </tr>
+                <tr id="hiddenHeadRow_6.2" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_6.3" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_6.4" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <!-- Row 7 Head -->
+                <tr>
+                    <th>
+                        <div class="rowheadcell">
+                            <input type="checkbox" class="cellcheckbox">
+                            <div class="spacebetween">
+                                Row 7 <div><i class="far fa-star"></i><i class="fas fa-chevron-right" id="chevRow7" onclick="showHiddenRow('hiddenHeadRow_7.1', 'hiddenHeadRow_7.2', 'hiddenHeadRow_7.3', 'hiddenHeadRow_7.4'
+                                    , 'hiddenBodyRow_7.1', 'hiddenBodyRow_7.2', 'hiddenBodyRow_7.3', 'hiddenBodyRow_7.4', this.id);"></i></div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>2750</th>
+                </tr>
+                <!-- Row 7 Head Expand Hidden -->
+                <tr id="hiddenHeadRow_7.1" class="hidden_row">
+                    <th colspan="2">
+                        <button class="btn--top10">Просмотреть Топ-10</button>
+                    </th>
+                </tr>
+                <tr id="hiddenHeadRow_7.2" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_7.3" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_7.4" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <!-- Row 8 Head -->
+                <tr>
+                    <th>
+                        <div class="rowheadcell">
+                            <input type="checkbox" class="cellcheckbox">
+                            <div class="spacebetween">
+                                Row 8 <i class="fas fa-chevron-right" id="chevRow8" onclick="showHiddenRow('hiddenHeadRow_8.1', 'hiddenHeadRow_8.2', 'hiddenHeadRow_8.3', 'hiddenHeadRow_8.4'
+                                , 'hiddenBodyRow_8.1', 'hiddenBodyRow_8.2', 'hiddenBodyRow_8.3', 'hiddenBodyRow_8.4', this.id);"></i>
+                            </div>
+                        </div>
+                    </th>
+                    <th>4150</th>
+                </tr>
+                <!-- Row 8 Head Expand Hidden -->
+                <tr id="hiddenHeadRow_8.1" class="hidden_row">
+                    <th colspan="2">
+                        <button class="btn--top10">Просмотреть Топ-10</button>
+                    </th>
+                </tr>
+                <tr id="hiddenHeadRow_8.2" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_8.3" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+                <tr id="hiddenHeadRow_8.4" class="hidden_row">
+                    <td colspan="2"></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="littleCell lightcolor">
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        <div>
+                            25.06
+                        </div>
+                        <div class="littleNumberBottom">
+                            30
+                        </div>
+                    </td>
+                    <td class="littleCell lightcolor">26.06</td>
+                    <td class="littleCell lightcolor">27.06</td>
+                    <td class="littleCell lightcolor">28.06</td>
+                    <td class="littleCell lightcolor">29.06</td>
+                    <td class="littleCell lightcolor">30.06</td>
+                    <td class="littleCell lightcolor">01.07</td>
+                    <td class="littleCell lightcolor">02.07</td>
+                    <td class="littleCell lightcolor">03.07</td>
+                    <td class="littleCell lightcolor">04.07</td>
+                    <td class="littleCell lightcolor">05.07</td>
+                    <td class="littleCell lightcolor">06.07</td>
+                    <td class="littleCell lightcolor">07.07</td>
+                    <td class="littleCell lightcolor">08.07</td>
+                </tr>
+                <!-- Row 1 -->
+                <tr>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        62
+                        <div class="littleNumberBottom">
+                            30
+                        </div>
+                    </td>
+                    <td>48</td>
+                    <td>37</td>
+                    <td>62</td>
+                    <td>44</td>
+                    <td>89</td>
+                    <td>74</td>
+                    <td>35</td>
+                    <td>62</td>
+                    <td>59</td>
+                    <td>88</td>
+                    <td>74</td>
+                    <td>26</td>
+                    <td>97</td>
+                </tr>
+                <!-- Row 1 Extand Hidden -->
+                <tr id="hiddenBodyRow_1.1" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_1.2" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_1.3" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_1.4" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <!-- Row 2 -->
+                <tr>
+                    <td>25</td>
+                    <td>38</td>
+                    <td>76</td>
+                    <td>42</td>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        67
+                        <div class="littleNumberBottom">
+                            30
+                        </div>
+                    </td>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        34
+                    </td>
+                    <td>62</td>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        74
+                    </td>
+                    <td>25</td>
+                    <td>39</td>
+                    <td>53</td>
+                    <td>46</td>
+                    <td>79</td>
+                    <td>36</td>
+                </tr>
+                <!-- Row 2 Extand Hidden -->
+                <tr id="hiddenBodyRow_2.1" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_2.2" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_2.3" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_2.4" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <!-- Row 3 -->
+                <tr>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        62
+                        <div class="littleNumberBottom">
+                            30
+                        </div>
+                    </td>
+                    <td>48</td>
+                    <td>37</td>
+                    <td>62</td>
+                    <td>44</td>
+                    <td>89</td>
+                    <td>74</td>
+                    <td>35</td>
+                    <td>62</td>
+                    <td>59</td>
+                    <td>88</td>
+                    <td>74</td>
+                    <td>26</td>
+                    <td>97</td>
+                </tr>
+                <!-- Row 3 Extand Hidden -->
+                <tr id="hiddenBodyRow_3.1" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_3.2" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_3.3" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_3.4" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <!-- Row 4 -->
+                <tr>
+                    <td>25</td>
+                    <td>38</td>
+                    <td>76</td>
+                    <td>42</td>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        67
+                        <div class="littleNumberBottom">
+                            30
+                        </div>
+                    </td>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        34
+                    </td>
+                    <td>62</td>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        74
+                    </td>
+                    <td>25</td>
+                    <td>39</td>
+                    <td>53</td>
+                    <td>46</td>
+                    <td>79</td>
+                    <td class="greencell">
+                        <div class="littleNumberTopRight--green">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        36
+                    </td>
+                </tr>
+                <!-- Row 4 Extand Hidden -->
+                <tr id="hiddenBodyRow_4.1" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_4.2" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_4.3" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_4.4" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <!-- Row 5 -->
+                <tr>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        62
+                        <div class="littleNumberBottom">
+                            30
+                        </div>
+                    </td>
+                    <td>48</td>
+                    <td>37</td>
+                    <td>62</td>
+                    <td>44</td>
+                    <td>89</td>
+                    <td>74</td>
+                    <td>35</td>
+                    <td>62</td>
+                    <td>59</td>
+                    <td>88</td>
+                    <td>74</td>
+                    <td>26</td>
+                    <td class="greencell">
+                        <div class="littleNumberTopRight--green">
+                            new
+                        </div>
+                        97
+                        <div class="littleNumberBottom">
+                            30
+                        </div>
+                    </td>
+                </tr>
+                <!-- Row 5 Extand Hidden -->
+                <tr id="hiddenBodyRow_5.1" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_5.2" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_5.3" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_5.4" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <!-- Row 6 -->
+                <tr>
+                    <td>25</td>
+                    <td>38</td>
+                    <td>76</td>
+                    <td>42</td>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        67
+                        <div class="littleNumberBottom">
+                            30
+                        </div>
+                    </td>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        34
+                    </td>
+                    <td>62</td>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        74
+                    </td>
+                    <td>25</td>
+                    <td>39</td>
+                    <td>53</td>
+                    <td>46</td>
+                    <td>79</td>
+                    <td>36</td>
+                </tr>
+                <!-- Row 6 Extand Hidden -->
+                <tr id="hiddenBodyRow_6.1" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_6.2" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_6.3" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_6.4" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <!-- Row 7 -->
+                <tr>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        62
+                        <div class="littleNumberBottom">
+                            30
+                        </div>
+                    </td>
+                    <td>48</td>
+                    <td>37</td>
+                    <td>62</td>
+                    <td>44</td>
+                    <td>89</td>
+                    <td>74</td>
+                    <td>35</td>
+                    <td>62</td>
+                    <td>59</td>
+                    <td>88</td>
+                    <td>74</td>
+                    <td>26</td>
+                    <td class="redcell">
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        97
+                    </td>
+                </tr>
+                <!-- Row 7 Extand Hidden -->
+                <tr id="hiddenBodyRow_7.1" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_7.2" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_7.3" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_7.4" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <!-- Row 8 -->
+                <tr>
+                    <td>25</td>
+                    <td>38</td>
+                    <td>76</td>
+                    <td>42</td>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        67
+                        <div class="littleNumberBottom">
+                            30
+                        </div>
+                    </td>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        34
+                    </td>
+                    <td>62</td>
+                    <td>
+                        <div class="littleNumberTopRight--red">
+                            <span class="fas fa-sort-down"></span>
+                            1
+                        </div>
+                        74
+                    </td>
+                    <td>25</td>
+                    <td>39</td>
+                    <td>53</td>
+                    <td>46</td>
+                    <td>79</td>
+                    <td>36</td>
+                </tr>
+                <!-- Row 8 Extand Hidden -->
+                <tr id="hiddenBodyRow_8.1" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_8.2" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_8.3" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+                <tr id="hiddenBodyRow_8.4" class="hidden_row">
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                    <td>
+                        <div class="imagePlaceHolder"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

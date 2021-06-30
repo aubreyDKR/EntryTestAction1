@@ -1,0 +1,240 @@
+/*General*/
+@font-face {
+    font-family: 'Roboto';
+    src: url(/Fonts/Roboto/Roboto-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+    font-family: 'Roboto';
+    font-size: 0.875em;
+    color: rgba(17, 34, 62, 1);
+}
+
+/*Table formating*/
+table {
+    border-collapse: collapse;
+    display: flex;
+}
+
+tbody {
+    overflow-x: scroll;
+}
+
+th, td {
+    height: 2.5em;
+    text-align: center;
+    padding: 0.625em;
+}
+
+th {
+    border: 1px solid rgba(17, 34, 62, 0.2);
+    font-weight: normal;
+}
+
+td {
+    position: relative;
+    border: 1px solid rgba(17, 34, 62, 0.07);
+    background-clip: padding-box;
+}
+
+.wrapper {
+    margin-top: 5%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    background: white;
+    max-width: 80vw;
+}
+
+.hidden_row {
+    display: none;
+}
+
+.hidden_row th, .hidden_row td {
+    border: none;
+}
+
+.show {
+    display: table-row;
+}
+
+/*Cells formating*/
+.largeCell {
+    min-width: 15.625em;
+}
+
+.mediumCell {
+    min-width: 5.625em;
+}
+
+.littleCell {
+    width: 2.5em;
+}
+
+.lightcolor {
+    color: rgba(17, 34, 62, 0.3);
+}
+
+.textleft {
+    text-align: left;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.iconscell {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.spacebetween {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notecell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rowheadcell {
+    display: flex;
+}
+
+.cellcheckbox {
+    margin-right: 1.25em;
+}
+
+.imagePlaceHolder {
+    width: 2.1875em;
+    height: 2.1875em;
+    background-color: rgba(17, 34, 62, 1);
+    border-radius: 0.625em;
+    margin: auto;
+}
+
+.littleNumberBottom {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    border-radius: 3px;
+    background-color: rgba(117, 185, 38, 0.3);
+    width: 1.375em;
+    font-size: 0.625rem;
+    margin: auto;
+    color: rgba(53, 91, 8, 1);
+}
+
+.littleNumberTopRight--red {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    font-size: 0.625em;
+    font-weight: bold;
+    color: #d0021b;
+}
+
+.littleNumberTopRight--green {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    font-size: 0.625em;
+    font-weight: bold;
+    color: #417505;
+}
+
+.redcell {
+    background-color: #fff6f6;
+}
+
+.greencell {
+    background-color: #faffee;
+}
+
+/*Icons style*/
+i + i {
+    padding-left: 0.625em;
+}
+
+i {
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+i:hover {
+    transform: scale(1.5);
+}
+
+.fa-star {
+    color: #f5a623;
+}
+
+/*Buttons style*/
+.btn--top10 {
+    width: 174px;
+    height: 32px;
+    background-color: white;
+    border: 1px solid rgba(17, 34, 62, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.btn--top10:hover {
+    transform: scale(1.2);
+}
+
+/*Media queries*/
+@media screen and (max-width: 992px) {
+    .largeCell {
+        min-width: 125px;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        margin-top: 30%;
+        left: 0;
+        transform: translate(-0%, -0%);
+    }
+
+    .notecell {
+        flex-direction: column;
+        padding: 0px 0px;
+    }
+
+    .mediumCell {
+        min-width: 30px;
+    }
+
+    th, td {
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 1920) {
+    body {
+        font-size: 500px;
+    }
+
+    .wrapper {
+        margin-top: 30em;
+        border-radius: 10px;
+    }
+
+    .littleNumberBottom {
+        font-size: 0.7em;
+    }
+
+    .littleNumberTopRight--red, .littleNumberTopRight--green {
+        font-size: 0.7em;
+    }
+}
